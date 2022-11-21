@@ -1,0 +1,112 @@
+main {
+    margin: auto;
+}
+
+.hero__top {
+    width: 100%;
+    background-image: url(/imgs/hero__backImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 15px;
+    margin-bottom: 144px;
+
+    .hero__backDrop {
+        border-radius: 10px;
+
+        .hero__inner-container {
+            padding: 117px 85px;
+
+            .hero__title {
+                width: 490px;
+                font-family: 'Fraunces';
+                font-weight: 900;
+                font-size: 72px;
+                line-height: 72px;
+                color: #FEFCF7;
+                margin-bottom: 32px;
+            }
+
+            .hero__text {
+                width: 410px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FEFCF7;
+                mix-blend-mode: normal;
+                opacity: 0.8;
+                margin-bottom: 56px;
+            }
+
+            .hero__btn {
+                font-family: 'Fraunces';
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FEFCF7;
+                padding: 15px 31px;
+                background: #66D2CF;
+                border-radius: 6px;
+                cursor: pointer;
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:770px) {
+    .hero__top {
+        .hero__backDrop {
+            background-color: rgba(0, 0, 0, 0);
+            backdrop-filter: blur(3px);
+        }
+
+        background-image: url(/imgs/media-heroTop__backImage.jpg);
+        background-position: right;
+
+        .hero__inner-container {
+            padding: 104px 58px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hero__container {
+        padding: 24px 24px;
+        text-align: center;
+
+        .hero__top {
+            .hero__backDrop {
+                background-color: rgba(0, 0, 0, 0.519);
+                backdrop-filter: blur(3px);
+            }
+
+            background-image: url(/imgs/media-heroTop__backImage.jpg);
+            background-position: right;
+
+            .hero__inner-container {
+                padding: 100px 24px;
+
+                .hero__title {
+                    max-width: 100%;
+                    font-size: 36px;
+                    line-height: 36px;
+                    text-align: center;
+                }
+
+                .hero__text {
+                    max-width: 100%;
+                    font-size: 14px;
+                    line-height: 25px;
+                    margin-bottom: 39px;
+                }
+
+                .hero__btn {
+                    width: 217px;
+                    height: 56px;
+                    background-color: #0E8784;
+                }
+            }
+        }
+    }
+}
