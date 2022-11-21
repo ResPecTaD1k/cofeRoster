@@ -9,7 +9,7 @@ main {
     background-size: cover;
     color: #fff;
     border-radius: 15px;
-    margin-bottom: 144px;
+    margin-bottom: 136px;
 
     .hero__backDrop {
         border-radius: 10px;
@@ -107,6 +107,127 @@ main {
                     background-color: #0E8784;
                 }
             }
+        }
+    }
+}
+
+// H - E - R -  O  _-_-_-  C  O  N  T  E  N  T
+
+.hero__content
+{
+    max-width: 100%;
+    padding-top: 126px;
+    .content__item
+    {
+        position: relative;
+        top: -50px;
+        text-align: center;
+    }
+    
+    .content__inner-card
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+        position: relative;
+        .content__card-backImage
+        {
+            width: 1111px;            
+            height: 196px;
+            position: absolute;
+            z-index: -1;
+            top: -130px;
+            left: 20px;
+            opacity: .4;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .content__card
+        {
+            max-width: 255px;
+            text-align: center;
+            box-shadow: 0 10px 15px #0000005e;
+            border-radius: 8px;
+            transition: .3s;
+            cursor: pointer;
+            backdrop-filter: blur(3px);
+            &:hover
+            {
+                box-shadow: 0 0px 20px #000000a6;
+                border-radius: 20px;
+            }
+            &:active
+            {
+                box-shadow: 0 0px 10px #000000e8;
+                border-radius: 15px;
+            }
+            .content__card-image
+            {
+                width: 255px;
+                height: 193px;
+                background-image: url(/imgs/hero__Center-box2.svg);
+                margin-bottom: 71px;
+            }
+            .content__card-title
+            {
+                font-family: 'Fraunces';
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 32px;
+                color: #333D4B;
+                margin-bottom: 24px;
+            }
+            .content__card-text
+            {
+                max-width: 250px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #333D4B;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .content__inner-container
+    {
+        padding: 0px 25px;
+        .content__inner-card
+        {
+            .content__card-backImage
+            {
+                position: relative;
+                height: 0px;
+                opacity: 1;
+            }
+        }
+        .content__card
+        {
+            margin: auto;
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .content__inner-container
+    {
+        padding: 0px 25px;
+        .content__inner-card
+        {
+            gap: 50px;
+            .content__card-backImage
+            {
+                position: relative;
+                width: 375px;
+                height: 0px;
+            }
+        }
+        .content__card
+        {
+            margin: auto;
         }
     }
 }

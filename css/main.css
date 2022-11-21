@@ -43,6 +43,10 @@ ul, ol {
   padding: 35px 79px;
 }
 
+.inner-container {
+  padding: 0px 85px;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -139,7 +143,7 @@ main {
   background-size: cover;
   color: #fff;
   border-radius: 15px;
-  margin-bottom: 144px;
+  margin-bottom: 136px;
 }
 .hero__top .hero__backDrop {
   border-radius: 10px;
@@ -226,5 +230,112 @@ main {
     width: 217px;
     height: 56px;
     background-color: #0E8784;
+  }
+}
+.hero__content {
+  max-width: 100%;
+  padding-top: 126px;
+}
+.hero__content .content__item {
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
+.hero__content .content__inner-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  position: relative;
+}
+.hero__content .content__inner-card .content__card-backImage {
+  width: 1111px;
+  height: 196px;
+  position: absolute;
+  z-index: -1;
+  top: -130px;
+  left: 20px;
+  opacity: 0.4;
+}
+.hero__content .content__inner-card .content__card-backImage img {
+  width: 100%;
+  height: auto;
+}
+.hero__content .content__inner-card .content__card {
+  max-width: 255px;
+  text-align: center;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.368627451);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.368627451);
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.hero__content .content__inner-card .content__card:hover {
+  -webkit-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6509803922);
+          box-shadow: 0 0px 20px rgba(0, 0, 0, 0.6509803922);
+  border-radius: 20px;
+}
+.hero__content .content__inner-card .content__card:active {
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.9098039216);
+          box-shadow: 0 0px 10px rgba(0, 0, 0, 0.9098039216);
+  border-radius: 15px;
+}
+.hero__content .content__inner-card .content__card .content__card-image {
+  width: 255px;
+  height: 193px;
+  background-image: url(/imgs/hero__Center-box2.svg);
+  margin-bottom: 71px;
+}
+.hero__content .content__inner-card .content__card .content__card-title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+  margin-bottom: 24px;
+}
+.hero__content .content__inner-card .content__card .content__card-text {
+  max-width: 250px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+
+@media screen and (max-width: 1200px) {
+  .content__inner-container {
+    padding: 0px 25px;
+  }
+  .content__inner-container .content__inner-card .content__card-backImage {
+    position: relative;
+    height: 0px;
+    opacity: 1;
+  }
+  .content__inner-container .content__card {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .content__inner-container {
+    padding: 0px 25px;
+  }
+  .content__inner-container .content__inner-card {
+    gap: 50px;
+  }
+  .content__inner-container .content__inner-card .content__card-backImage {
+    position: relative;
+    width: 375px;
+    height: 0px;
+  }
+  .content__inner-container .content__card {
+    margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
