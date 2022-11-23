@@ -385,6 +385,7 @@ main {
 .heroBottom__container
 {
     margin-top: 356px;
+    margin-bottom: 120px;
 }
 .bottom__title
 {
@@ -470,7 +471,8 @@ main {
 }
 .bottom__btn
 {
-    @include global__btn
+    @include global__btn;
+    margin-top: 79px;
 }
 
 
@@ -487,16 +489,43 @@ main {
     {
         margin-top: 470px;
     }
+    .bottom__list
+    {
+        gap: 10px;
+    }
+    .bottom__item
+    {
+        width: 213px;
+    }
 }
 
 @media screen and (max-width:800px) {
+    .container
+    {
+        padding: 0 35px;
+    }
     .heroBottom__container
     {
-        margin-top: 840px;
+        margin-top: 480px;
     }
 }
 
 @media screen and (max-width:500px) {
+    .heroBottom__container
+    {
+        margin-top: 570px;
+        padding: 0 24px;
+    }
+    .bottom__line, .bottom__lineList
+    {
+        display: none;
+    }
+    .bottom__item
+    {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:380px) {
     .heroBottom__container
     {
         margin-top: 670px;
@@ -505,5 +534,9 @@ main {
     .bottom__line, .bottom__lineList
     {
         display: none;
+    }
+    .bottom__item
+    {
+        margin: 0 auto;
     }
 }
