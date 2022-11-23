@@ -472,7 +472,6 @@ main {
 .bottom__btn
 {
     @include global__btn;
-    margin-top: 79px;
 }
 
 
@@ -524,12 +523,27 @@ main {
     {
         margin: 0 auto;
     }
+    .bottom__btn
+    {
+        margin-top: 79px;
+    }
 }
 @media screen and (max-width:380px) {
     .heroBottom__container
     {
-        margin-top: 670px;
+        margin-top: 700px;
         padding: 0 24px;
+    }
+    .choose__title
+    {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .choose__text
+    {
+        font-size: 16px;
+        line-height: 16px; 
+        line-height: 20px;
     }
     .bottom__line, .bottom__lineList
     {
