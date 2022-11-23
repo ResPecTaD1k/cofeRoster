@@ -361,7 +361,7 @@ main {
     .choose__item
     {
         max-width: 100%;
-        padding: 72px 33px 51px 33px;
+        padding: 50px 15px 51px 15px;
         flex-direction: column;
         text-align: center;
         &::before
@@ -518,6 +518,10 @@ main {
     .bottom__line, .bottom__lineList
     {
         display: none;
+    }
+    .bottom__list
+    {
+        gap: 40px;
     }
     .bottom__item
     {
