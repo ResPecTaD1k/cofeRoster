@@ -14,3 +14,8 @@
     color: #FEFCF7;
     cursor: pointer;
 }
+@mixin dFlex {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
