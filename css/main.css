@@ -787,4 +787,60 @@ main {
   .site-footer__icons {
     margin-top: 48px;
   }
+}
+.about__inner-container {
+  padding: 0 85px;
+}
+
+.about__top {
+  padding: 137px 0;
+  background-image: url(../imgs/about__backImage.png);
+  border-radius: 10px;
+}
+
+.about__title {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 24px;
+}
+
+.about__text {
+  width: 445px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+}
+
+@media screen and (max-width: 1111px) {
+  .about__top {
+    background-position: center top;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about__top {
+    text-align: center;
+    padding: 111px 0;
+  }
+  .about__inner-container {
+    padding: 0 24px;
+  }
+  .about__text {
+    width: 100%;
+    opacity: 0.8;
+  }
+}
+@media screen and (max-width: 580px) {
+  .about__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .about__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=main.css.map */
