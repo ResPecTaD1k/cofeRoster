@@ -2,9 +2,13 @@
 {
     padding: 0 85px;
 }
+.aboutHero
+{
+    margin-bottom: 168px;
+}
 .about__top
 {
-    padding: 137px 0;
+    padding: 137px 58px;
     background-image: url(../imgs/about__backImage.png);
     border-radius: 10px;
     margin-bottom: 168px;
@@ -60,6 +64,7 @@
     }
     .about__text
     {
+        padding: 0 24px;
         font-size: 15px;
         line-height: 25px;
     }

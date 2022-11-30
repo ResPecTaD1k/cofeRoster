@@ -1,0 +1,104 @@
+.block__container
+{
+    height: 474px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2C343E;
+    border-radius: 10px;
+    position: relative;
+}
+.block__text
+{
+    max-width: 550px;
+    padding: 0 10px;
+    z-index: 1;
+}
+.block__title
+{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FEFCF7;
+    margin-bottom: 32px;
+}
+.block__subtext
+{
+    font-family: 'Barlow';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+.block__img
+{
+    width: 445px;
+    height: 474px;
+    position: absolute;
+    right: 8%;
+    top: -10%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url(../../imgs/about__heroImage2.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+@media screen and (max-width:1200px) {
+    .block__container
+    {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 300px;
+    }
+    .block__title
+    {
+        font-size: 32px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+    .block__subtext
+    {
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 64px;
+    }
+    .block__img
+    {
+        top: -15%;
+        height: 320px;
+        width: 80%;
+        background-image: url(../../imgs/information__mediaImg.jpg);
+    }
+}
+@media screen and(max-width:500px) {
+    .block__container
+    {
+        padding-top: 160px;
+        margin-bottom: 120px;
+    }
+    .block__text
+    {
+        width: 90%;
+    }
+    .block__title
+    {
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 24px;
+    }
+    .block__subtext
+    {
+        margin-bottom: 61px;
+    }
+    .block__img
+    {
+        width: 80%;        
+        height: 200px;
+    }
+}
