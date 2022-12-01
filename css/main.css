@@ -1238,7 +1238,7 @@ main {
   background-image: url(../../imgs/createTop.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 134px 0;
+  padding: 134px 85px;
 }
 
 .create__title {
@@ -1308,6 +1308,10 @@ main {
     margin-bottom: 35px;
   }
 }
+.create__info {
+  margin-bottom: 168px;
+}
+
 .create__info-container {
   background-color: #282F38;
   padding: 100px 85px;
