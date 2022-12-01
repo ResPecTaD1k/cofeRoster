@@ -1,0 +1,172 @@
+.create__info-container
+{
+    background-color: #282F38;
+    padding: 100px 85px;
+}
+.info__line
+{
+    width: 66%;
+    background-color: #FDD6BA;
+    border: 2px solid #FDD6BA;
+    margin-left: 12px;
+    margin-bottom: 82px;
+}
+.info__liner
+{
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+.info__circle
+{
+    width: 31px;
+    height: 31px;
+    border: 2px solid #FDD6BA;
+    border-radius: 50%;
+}
+
+.info__block
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+.info__card
+{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info__number
+{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+    margin-bottom: 32px;
+}
+.info__title
+{
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #FEFCF7;
+    margin-bottom: 42px;
+}
+.info__text
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FEFCF7;
+}
+
+@media screen and (max-width:1200px) {
+    .info__line
+    {
+        width: 65%;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .create__info-container
+    {
+        text-align: center;
+    }
+    .info__line
+    {
+        width: 90%;
+        margin-left: 10px;
+    }
+    .info__liner
+    {
+        width: 97%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .create__info-container
+    {
+        padding: 100px 20px;
+    }
+    .info__line
+    {
+        width: 98%;
+        margin-left: 0px;
+    }
+    .info__liner
+    {
+        width: 100%;
+        position: relative;
+    }
+    .info__red
+    {
+        background-color: white;
+    }
+    .info__blue
+    {
+        background: linear-gradient(to bottom, blue,red);
+    }
+    .info__leftCircle
+    {
+        animation-name: liner;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        position: absolute;
+    }
+
+    @keyframes liner {
+        0%
+        {
+            position: absolute;
+            left: 0%;
+            background-color: white;
+        }
+        50%
+        {
+            left: 90%;
+            backdrop-filter: blur(3px);
+        }
+        100%
+        {
+            left: 0%;
+            background: linear-gradient(to bottom, blue,red);
+        }
+    }
+    .info__card
+    {
+        margin: 0 auto;
+    }
+    .info__number
+    {
+        animation-name: number;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes number {
+        0%
+        {
+            display: inline;
+            position: relative;
+            transform: rotateY(360deg);
+            background-color: rgba(255, 255, 255, 0.551);
+            border-radius: 50px;
+        }
+        100%
+        {
+            background-color: rgba(255, 255, 255, 0.551);
+            border-radius: 50px;
+        }
+    }
+}
